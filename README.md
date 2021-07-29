@@ -1,6 +1,6 @@
 # retrospect-client-agent
 
-Retrospect Client Agent is a node.js package for recording browser events and instrumenting outgoing requests to enable backend tracing.
+Retrospect Client Agent is a node.js package for recording browser events and adding identifying headers to outgoing requests to enable backend tracing.
 
 # Installation
 
