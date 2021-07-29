@@ -1,21 +1,21 @@
 {
-  "name": "textrix-client",
-  "version": "1.0.3",
-  "description": "",
+  "name": "retrospect-client-agent",
+  "version": "1.0.0",
+  "description": "browser recording and request patching for Retrospect",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team-Textrix/textrix_client_package.git"
+    "url": "git+https://github.com/Team-Retrospect/retrospect-client-agent.git"
   },
-  "author": "Textrix",
+  "author": "Retrospect",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Team-Textrix/textrix_client_package/issues"
+    "url": "https://github.com/Team-Retrospect/retrospect-client-agent/issues"
   },
-  "homepage": "https://github.com/Team-Textrix/textrix_client_package#readme",
+  "homepage": "https://github.com/Team-Retrospect/retrospect-client-agent#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "fetch-intercept": "^2.4.0",
