@@ -1,0 +1,20 @@
+{
+  "endpoint": "https://api.xadi.io/events",
+  "fullSnapshotEndpoint": "https://api.xadi.io/events/snapshots",
+  "sampling": {
+    "mousemove": false,
+    "mouseInteraction": {
+      "MouseUp": false,
+      "MouseDown": false,
+      "Click": true,
+      "ContextMenu": false,
+      "DblClick": true,
+      "Focus": true,
+      "Blur": true,
+      "TouchStart": false,
+      "TouchEnd": false
+    },
+    "input": "last"
+  },
+  "fullSnapshotEveryNthEvent": 10
+}
