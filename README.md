@@ -6,7 +6,9 @@ Retrospect Client Agent is a node.js package for recording browser events and ad
 
 This is a Node.js module available through the npm registry. Installation is done using the npm install command:
 
+```
 $ npm install retrospect-client-agent
+```
 
 # Configuring Recording
 
