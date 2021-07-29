@@ -39,17 +39,32 @@ Session Ids expire after 30 minutes, or when the tab/window is closed
 
     ### Configuration Steps
 
-    - Edit the `endpoint` and `fullSnapshotEndpoint` properties to contain the name of the `[add group name and link here]` backend.
+    - Edit the `endpoint` and `fullSnapshotEndpoint` properties to contain the name of the backend. By default, the Retrospect api is listening on port 80 for event data.
 
     <br>
 
-    ### Example of `config.js` using a domain as a endpoint
+    ### Example of `config.js` using a domain as an endpoint
 
     ```json
     
     {
-      "endpoint": "myawesomeapp.com/events",
-      "fullSnapshotEndpoint": "myawesomeapp.com/events/snapshots"
-      ...
+      "endpoint": "http://myawesomeapp.com/events",
+      "fullSnapshotEndpoint": "http://myawesomeapp.com/events/snapshots"
+      "sampling": {
+        "mousemove": false,
+        "mouseInteraction": {
+          "MouseUp": false,
+          "MouseDown": false,
+          "Click": true,
+          "ContextMenu": false,
+          "DblClick": true,
+          "Focus": true,
+          "Blur": true,
+          "TouchStart": false,
+          "TouchEnd": false
+        },
+      "input": "last"
+      },
+      "fullSnapshotEveryNthEvent": 10
     }
     ```
