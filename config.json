@@ -1,6 +1,6 @@
 {
-  "endpoint": "https://api.xadi.io/events",
-  "fullSnapshotEndpoint": "https://api.xadi.io/events/snapshots",
+  "endpoint": "https://your.domain.io/events",
+  "fullSnapshotEndpoint": "https://your.domain.io/events/snapshots",
   "sampling": {
     "mousemove": false,
     "mouseInteraction": {
