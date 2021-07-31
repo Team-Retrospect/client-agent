@@ -1,6 +1,6 @@
 {
   "name": "retrospect-client-agent",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "browser recording and request patching for Retrospect",
   "main": "index.js",
   "scripts": {

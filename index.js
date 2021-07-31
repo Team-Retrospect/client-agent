@@ -64,7 +64,6 @@ const initRrweb = () => {
       const defaultLog = console.log['__rrweb_original__']
         ? console.log['__rrweb_original__']
         : console.log;
-      defaultLog(event);
 
       // event.type 2 means a full snapshot event
       // which is sent to a separate endpoint
