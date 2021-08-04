@@ -70,9 +70,9 @@ const initRrweb = () => {
       // because it's handled differently from other events
       let endpoint;
       if (event.type === 2) {
-        endpoint = fullDOMSnapshotUrl;
+        endpoint = `${fullDOMSnapshotUrl}/events/snapshots`;
       } else {
-        endpoint = defaultUrl;
+        endpoint = `${defaultUrl}/events`;
       }
 
       // add the X-Rrweb header so that the fetch interceptor

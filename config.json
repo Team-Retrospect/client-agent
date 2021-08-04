@@ -1,6 +1,6 @@
 {
-  "endpoint": "https://your.domain.io/events",
-  "fullSnapshotEndpoint": "https://your.domain.io/events/snapshots",
+  "endpoint": "https://your.domain.io",
+  "fullSnapshotEndpoint": "https://your.domain.io",
   "sampling": {
     "mousemove": false,
     "mouseInteraction": {
