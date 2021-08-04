@@ -56,9 +56,6 @@ fetchIntercept.register({
 });
 
 const initRrweb = () => {
-  const defaultUrl = rrWebConfig.endpoint;
-  const fullDOMSnapshotUrl = rrWebConfig.fullSnapshotEndpoint;
-
   rrweb.record({
     emit(event) {
       const defaultLog = console.log['__rrweb_original__']
@@ -70,9 +67,9 @@ const initRrweb = () => {
       // because it's handled differently from other events
       let endpoint;
       if (event.type === 2) {
-        endpoint = `${fullDOMSnapshotUrl}/events/snapshots`;
+        endpoint = `${rrWebConfig.endpoint}/events/snapshots`;
       } else {
-        endpoint = `${defaultUrl}/events`;
+        endpoint = `${rrWebConfig.endpoint}/events`;
       }
 
       // add the X-Rrweb header so that the fetch interceptor

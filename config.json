@@ -1,6 +1,5 @@
 {
   "endpoint": "https://your.domain.io",
-  "fullSnapshotEndpoint": "https://your.domain.io",
   "sampling": {
     "mousemove": false,
     "mouseInteraction": {
