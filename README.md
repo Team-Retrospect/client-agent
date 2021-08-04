@@ -12,10 +12,10 @@ $ npm install retrospect-client-agent
 
 # Configuring Recording
 
-1. Import the Recorder object from 'textrix-client' into your entry point file (ex. index.js) and call Recorder.init()
+1. Import the Recorder object from 'retrospect-client-agent' into your entry point file (ex. index.js) and call Recorder.init()
 
 ```js
-import Recorder from 'textrix-client'
+import Recorder from 'retrospect-client-agent'
 Recorder.init();
 ```
 
@@ -49,7 +49,7 @@ Session Ids expire after 30 minutes, or when the tab/window is closed
     
     {
       "endpoint": "http://myawesomeapp.com/events",
-      "fullSnapshotEndpoint": "http://myawesomeapp.com/events/snapshots"
+      "fullSnapshotEndpoint": "http://myawesomeapp.com/events/snapshots",
       "sampling": {
         "mousemove": false,
         "mouseInteraction": {
