@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Team-Retrospect/retrospect-client-agent.git"
+    "url": "git+https://github.com/Team-Retrospect/client-agent.git"
   },
   "author": "Retrospect",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Team-Retrospect/retrospect-client-agent/issues"
+    "url": "https://github.com/Team-Retrospect/client-agent/issues"
   },
-  "homepage": "https://github.com/Team-Retrospect/retrospect-client-agent#readme",
+  "homepage": "https://github.com/Team-Retrospect/client-agent#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "fetch-intercept": "^2.4.0",
