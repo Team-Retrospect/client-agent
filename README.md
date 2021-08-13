@@ -48,8 +48,7 @@ Session Ids expire after 30 minutes, or when the tab/window is closed
     ```json
     
     {
-      "endpoint": "http://myawesomeapp.com/events",
-      "fullSnapshotEndpoint": "http://myawesomeapp.com/events/snapshots",
+      "endpoint": "http://myawesomeapp.com",
       "sampling": {
         "mousemove": false,
         "mouseInteraction": {
