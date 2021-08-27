@@ -35,7 +35,6 @@ fetchIntercept.register({
     } else {
       delete patchConfig.headers['X-Rrweb'];
     }
-    // Modify the url or config here
     return [url, patchConfig];
   },
 
@@ -45,12 +44,10 @@ fetchIntercept.register({
   },
 
   response: function (response) {
-    // Modify the reponse object
     return response;
   },
 
   responseError: function (error) {
-    // Handle an fetch error
     return Promise.reject(error);
   },
 });
@@ -100,14 +97,13 @@ const initRrweb = () => {
 };
 
 const resetSessionToken = () => {
-  // session token expires 30 minutes from now
+  // session token expires after 30 minutes
   const expirationDate = new Date(new Date().getTime() + (60000 * 30));
   const token = {
     id: uuidv4(),
     expirationDate: expirationDate.toISOString(),
   }
 
-  // sessionStorage.setItem('SessionId', uuidv4());
   sessionStorage.setItem('RetrospectSessionToken', JSON.stringify(token));
 }
 
@@ -124,17 +120,14 @@ const Recorder = {
     if (RetrospectTokenExpiration < new Date()) {
       resetSessionToken();
     }
-    // this.sessionId = sessionStorage.getItem('SessionId');
 
     if (!sessionStorage.getItem('ChapterId')) {
       sessionStorage.setItem('ChapterId', uuidv4());
     }
-    // this.chapterId = sessionStorage.getItem('SessionId');
 
     if (!localStorage.getItem('UserId')) {
       localStorage.setItem('UserId', uuidv4());
     }
-    // this.userId = localStorage.getItem('UserId');
 
     initRrweb();
   },
